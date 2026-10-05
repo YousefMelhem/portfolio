@@ -17,4 +17,4 @@
 - Desktop/mobile screenshots were visually reviewed; existing image assets were reused and .NET visuals are conceptual text flows.
 - GitHub repository existence/visibility and demo HTTP responses are recorded in `PROJECT-EVIDENCE.md`. No live demo was invented; private links require authorized GitHub access.
 
-No TypeScript compiler or framework lint configuration existed in this plain JavaScript repository. No external repository tests were run, no CV PDF was rewritten, and no site was published.
+On 2026-10-05, the bundled CV PDF was replaced with the user-supplied October 2026 revision. PDF metadata/text extraction confirmed a readable, two-page, unencrypted A4 PDF. The static build verified the linked file exists and is included in `dist/images/`. No external repository tests were run and no site was published. No TypeScript compiler or framework lint configuration exists in this plain JavaScript repository.
