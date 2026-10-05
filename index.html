@@ -1,22 +1,21 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Yousef Mohammad - Software Engineering Master's Student specializing in Machine Learning and Data-Intensive Systems" />
-  <meta name="keywords" content="Software Engineer, Machine Learning, Portfolio, Web Development" />
+  <meta name="description" content="Yousef Mohammad, Software Engineer: C#/.NET, backend and full-stack development, Python, TypeScript, applied AI, RAG, databases, Docker and CI/CD." />
+  <meta name="keywords" content="Software Engineer, C#, .NET, Backend Developer, Full-Stack Developer, Python, TypeScript, AI, RAG, SQLite, Docker, CI/CD" />
   <meta name="author" content="Yousef Mohammad" />
 
-  <title>Yousef Mohammad | Software Engineer Portfolio</title>
+  <title>Yousef Mohammad | Software Engineer · C#/.NET & Full-Stack</title>
 
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Yousef Mohammad | Software Engineer Portfolio">
-  <meta property="og:description" content="Software Engineering Master's Student specializing in Machine Learning and Data-Intensive Systems">
-  <meta property="og:image" content="https://yousefmelhem.github.io/images/gitHub.png">
-  <meta property="og:url" content="https://yousefmelhem.github.io/">
+  <meta property="og:title" content="Yousef Mohammad | Software Engineer · C#/.NET & Full-Stack">
+  <meta property="og:description" content="Software Engineer working across C#/.NET, backend and full-stack development, applied AI and data-intensive applications.">
   <meta property="og:type" content="website">
 
   <!-- Google tag (gtag.js) -->
@@ -31,26 +30,27 @@
 
 </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- 3D Neural Network Background -->
-    <canvas id="neural-bg"></canvas>
+    <canvas id="neural-bg" aria-hidden="true"></canvas>
 
     <!-- Side Dot Navigation -->
     <nav id="dot-nav" aria-label="Section navigation">
-      <a href="#home" class="dot-link active" data-section="home"><span class="dot-label">Home</span></a>
-      <a href="#about" class="dot-link" data-section="about"><span class="dot-label">About</span></a>
-      <a href="#projects" class="dot-link" data-section="projects"><span class="dot-label">Projects</span></a>
-      <a href="#courses" class="dot-link" data-section="courses"><span class="dot-label">Courses</span></a>
-      <a href="#contact" class="dot-link" data-section="contact"><span class="dot-label">Contact</span></a>
+      <a href="#home" class="dot-link active" data-section="home" aria-label="Home"><span class="dot-label">Home</span></a>
+      <a href="#projects" class="dot-link" data-section="projects" aria-label="Projects"><span class="dot-label">Projects</span></a>
+      <a href="#about" class="dot-link" data-section="about" aria-label="About"><span class="dot-label">About</span></a>
+      <a href="#courses" class="dot-link" data-section="courses" aria-label="Courses"><span class="dot-label">Courses</span></a>
+      <a href="#contact" class="dot-link" data-section="contact" aria-label="Contact"><span class="dot-label">Contact</span></a>
     </nav>
 
     <!-- Quick Links (GitHub + CV) -->
     <div id="quick-links">
-      <a href="https://github.com/YousefMelhem" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/YousefMelhem" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
         </svg>
       </a>
-      <a href="images/cv.pdf" target="_blank" aria-label="CV">
+      <a href="images/cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
           <polyline points="14 2 14 8 20 8"></polyline>
@@ -60,6 +60,7 @@
       </a>
     </div>
 
+    <main id="main">
     <!-- Home / Hero -->
     <section id="home" class="section">
       <div class="container hero-container">
@@ -73,20 +74,22 @@
         </div>
         <h1 class="animate-text">Hello, I'm <span class="highlight">Yousef Mohammad</span></h1>
         <p class="subtitle animate-text">
-          Master of Science in Engineering: Software Engineering
+          Software Engineer · Backend &amp; Full-Stack Development
         </p>
-        <p class="tagline animate-text">Research Assistant at Linnaeus University | Specializing in AI, Machine Learning & Full-Stack Development</p>
+        <p class="tagline animate-text">C#/.NET · Python · TypeScript · Applied AI<br>From application logic and databases to interfaces and deployment.</p>
+        <p class="hero-context">Research Engineer at Linnaeus University · M.Sc. Software Engineering student</p>
         <div class="hero-buttons animate-text">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#projects" class="btn btn-primary">Featured Projects</a>
+          <a href="#timeready" class="btn btn-secondary">Explore C#/.NET</a>
           <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
         <div class="social-links">
-          <a href="https://github.com/YousefMelhem" target="_blank" aria-label="GitHub">
+          <a href="https://github.com/YousefMelhem" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/yousef-thamer-mohammad-540693290" target="_blank" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/yousef-thamer-mohammad-540693290" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
@@ -101,295 +104,313 @@
       </div>
     </section>
 
+    <!-- Projects: static HTML keeps content accessible without JavaScript. -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-intro">Professional research software, personal .NET applications and technically focused academic work.</p>
+        <nav class="project-shortcuts" aria-label="Project shortcuts"><a href="#timeready">C#/.NET projects</a><a href="#awaits">Full-stack work</a><a href="#medical">AI &amp; data</a><a href="#more-projects">More projects</a></nav>
+        <div class="projects-grid featured-grid">
+          <article class="project-card featured" id="awaits" aria-labelledby="awaits-title">
+            <div class="project-image"><img src="images/awaits.png" alt="AWAITS interface" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Research engineering · Full-stack</p>
+              <h3 id="awaits-title">AWAITS</h3>
+              <p>Academic writing support that connects student editing, AI feedback and teacher workflows.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">TypeScript</span><span class="tag">Nuxt 3</span><span class="tag">MongoDB</span><span class="tag">OpenAI API</span><span class="tag">Docker</span></div>
+              <div class="project-actions">
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: AWAITS</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Help students receive contextual writing feedback while giving teachers tools to manage topics and resources.</p>
+                  <h4>What I Built</h4><p>Contributed rich-text editing with TipTap, inline suggestions, streaming feedback, topic management and teacher analytics.</p>
+                  <h4>Engineering</h4><p>Nuxt server APIs, MongoDB models, authentication and role checks connect the editor to OpenAI. Server-Sent Events deliver incremental feedback; Docker and GitLab CI/CD support delivery.</p>
+                  <h4>Technology</h4><p>TypeScript · Nuxt 3 · MongoDB · OpenAI API · Docker</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card featured" id="timeready" aria-labelledby="timeready-title">
+            <div class="project-visual" aria-hidden="true"><span>C# / .NET</span><strong>UI → Application → SQLite</strong><small>Scheduling · Attendance · Payroll</small></div>
+            <div class="project-content">
+              <p class="project-kind">Personal project · C#/.NET</p>
+              <h3 id="timeready-title">TimeReady</h3>
+              <p>A local desktop application for staff scheduling, attendance review and payroll preparation.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">C#</span><span class="tag">.NET 10</span><span class="tag">Avalonia UI</span><span class="tag">SQLite</span><span class="tag">xUnit</span></div>
+              <div class="project-actions">
+                <a href="https://github.com/YousefMelhem/TimeReady" target="_blank" rel="noopener noreferrer" aria-label="TimeReady on GitHub, private repository">GitHub (private) ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: TimeReady</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Bring schedules, clock-in events and reviewed working hours into one local workplace application.</p>
+                  <h4>What I Built</h4><p>Implemented employee scheduling, clock-in/out and breaks, attendance corrections, payroll approval and locking, CSV export, and database backup/restore.</p>
+                  <h4>Engineering</h4><p>Separated domain, application, infrastructure and presentation code. WorkplaceService receives repository, clock and security dependencies through its constructor. SQLite transactions and versioned migrations preserve records; PBKDF2-hashed PINs and login throttling support local authentication; role checks guard payroll approval and export. xUnit covers attendance rules, migrations, authentication, backups and payroll. GitHub Actions builds/tests the app and packages Windows releases.</p>
+                  <h4>Technology</h4><p>C# · .NET 10 · Avalonia UI · SQLite · xUnit</p>
+                  <p class="project-note">Source repository is private; GitHub access is required.</p>
+                  <p class="project-note">Native desktop application. Async file-picker interactions; synchronous database access.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card featured" id="faktura-generator" aria-labelledby="faktura-generator-title">
+            <div class="project-visual" aria-hidden="true"><span>C# / .NET</span><strong>Validate → Calculate → Export</strong><small>Invoices · SQLite · PDF</small></div>
+            <div class="project-content">
+              <p class="project-kind">Personal project · C#/.NET</p>
+              <h3 id="faktura-generator-title">Faktura Generator</h3>
+              <p>A desktop invoicing tool with PDF export, customer records and local revenue dashboards.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">C#</span><span class="tag">.NET 10</span><span class="tag">Avalonia UI</span><span class="tag">SQLite</span><span class="tag">QuestPDF</span></div>
+              <div class="project-actions">
+                <a href="https://github.com/YousefMelhem/faktura-generator" target="_blank" rel="noopener noreferrer" aria-label="Faktura Generator on GitHub, private repository">GitHub (private) ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: Faktura Generator</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Create Swedish workshop invoices and keep customer, vehicle and income history accessible without a hosted backend.</p>
+                  <h4>What I Built</h4><p>Implemented invoice and customer numbering, customer/vehicle lookup, itemized invoices, VAT calculations, PDF export, invoice search and revenue charts.</p>
+                  <h4>Engineering</h4><p>Domain models separate validation and decimal calculations from PDF generation. An IInvoiceRepository interface fronts parameterized SQLite queries, relational constraints, transactions and schema migrations. Invoice snapshots preserve issued details; retention logic keeps aggregate income summaries. Async file operations save PDFs. GitHub Actions builds on Windows, macOS and Linux and packages company-specific releases.</p>
+                  <h4>Technology</h4><p>C# · .NET 10 · Avalonia UI · SQLite · QuestPDF</p>
+                  <p class="project-note">Source repository is private; GitHub access is required.</p>
+                  <p class="project-note">Native desktop application with local PDF generation and SQLite storage.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card featured" id="inkuis" aria-labelledby="inkuis-title">
+            <div class="project-image"><img src="images/Inkuis.png" alt="InKuiS interface" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Research engineering · Full-stack</p>
+              <h3 id="inkuis-title">InKuiS</h3>
+              <p>An event discovery and management platform with location search and bilingual user journeys.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">TypeScript</span><span class="tag">Nuxt 3</span><span class="tag">MongoDB</span><span class="tag">REST API</span><span class="tag">OpenAI API</span></div>
+              <div class="project-actions">
+                <a href="https://inkuis.lnu.se/" target="_blank" rel="noopener noreferrer" aria-label="InKuiS live demo">Live Demo ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: InKuiS</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Help people discover nearby events and give organizers tools to manage event information.</p>
+                  <h4>What I Built</h4><p>Contributed event CRUD, authentication, user profiles, attendance flows, image uploads, calendar views and analytics, with English/Swedish support.</p>
+                  <h4>Engineering</h4><p>Validated server APIs connect MongoDB data to the Vue interface. Nominatim geocoding supports location search; an OpenAI chatbot translates event questions into structured queries. Prefect workflows categorize events, with Docker and GitLab CI/CD supporting deployment.</p>
+                  <h4>Technology</h4><p>TypeScript · Nuxt 3 · MongoDB · REST API · OpenAI API</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card featured" id="medical" aria-labelledby="medical-title">
+            <div class="project-image"><img src="images/medPix.png" alt="Medical Case Visual Analytics Platform interface" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Academic project · AI &amp; data</p>
+              <h3 id="medical-title">Medical Case Visual Analytics Platform</h3>
+              <p>Linked visualizations and multimodal search help explore and compare medical cases.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Nuxt / Vue</span><span class="tag">D3.js</span><span class="tag">BioBERT</span><span class="tag">PubMedCLIP</span></div>
+              <div class="project-actions">
+                <a href="https://github.com/YousefMelhem/medical-visual-analytics" target="_blank" rel="noopener noreferrer" aria-label="Medical Case Visual Analytics Platform on GitHub">GitHub ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: Medical Case Visual Analytics Platform</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Make a medical case collection easier to explore through coordinated visual views and similarity search.</p>
+                  <h4>What I Built</h4><p>Built a case gallery, linked filters, UMAP exploration, group comparisons and a visual analytics dashboard, with text and example-image retrieval.</p>
+                  <h4>Engineering</h4><p>FastAPI endpoints serve case data and similarity search to a Nuxt/Vue frontend. BioBERT text embeddings and PubMedCLIP image embeddings support retrieval; D3 visualizations keep selections coordinated across views.</p>
+                  <h4>Technology</h4><p>Python · FastAPI · Nuxt / Vue · D3.js · BioBERT · PubMedCLIP</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card featured" id="riskrank" aria-labelledby="riskrank-title">
+            <div class="project-visual" aria-hidden="true"><span>Research / Security</span><strong>Scan → Context → Prioritize</strong><small>Static analysis · Git history · LLMs</small></div>
+            <div class="project-content">
+              <p class="project-kind">Master’s thesis · Research prototype</p>
+              <h3 id="riskrank-title">RiskRank</h3>
+              <p>A vulnerability-prioritization prototype combining scanner findings with code and repository context.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">Python</span><span class="tag">CodeQL</span><span class="tag">Git analysis</span><span class="tag">LLM integration</span></div>
+              <div class="project-actions">
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: RiskRank</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Investigate how code context can help reviewers prioritize vulnerability findings beyond severity alone.</p>
+                  <h4>What I Built</h4><p>Built a pipeline combining scanner findings, import-graph fan-in, Git history signals and LLM reachability analysis into reviewer-facing ranked reports.</p>
+                  <h4>Engineering</h4><p>Pipeline stages write structured artifacts and a run manifest. The implementation supports CodeQL with fallback scanning and selected repository context for LLM analysis. The prototype produces ranked reports to support human review of findings.</p>
+                  <h4>Technology</h4><p>Python · CodeQL · Git analysis · LLM integration</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+        <h3 class="project-group-title" id="more-projects">More Engineering &amp; Research</h3>
+        <div class="projects-grid">
+          <article class="project-card" id="rag" aria-labelledby="rag-title">
+            <div class="project-visual" aria-hidden="true"><span>Applied AI / Research</span><strong>Resources → Retrieval → Feedback</strong><small>Academic writing · Grounded context</small></div>
+            <div class="project-content">
+              <p class="project-kind">Bachelor’s thesis · Applied AI</p>
+              <h3 id="rag-title">RAG Academic Writing Tutor</h3>
+              <p>Research into resource-grounded writing feedback using retrieval-augmented generation.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">OpenAI Assistants</span><span class="tag">RAG</span><span class="tag">Vector stores</span></div>
+              <div class="project-actions">
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: RAG Academic Writing Tutor</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Investigate writing support grounded in supplied academic resources.</p>
+                  <h4>What I Built</h4><p>Built and evaluated a RAG-based academic-writing tutor using OpenAI Assistants, retrieval and vector-store grounding.</p>
+                  <h4>Engineering</h4><p>Compared retrieval-grounded feedback with non-RAG behavior. Related resource-backed assistant workflows are also part of AWAITS.</p>
+                  <h4>Technology</h4><p>OpenAI Assistants · RAG · Vector stores</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card" id="compiler" aria-labelledby="compiler-title">
+            <div class="project-image"><img src="images/compiler.webp" alt="Compiler illustration" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Academic project · Language tooling</p>
+              <h3 id="compiler-title">Multi-Target OFP Compiler</h3>
+              <p>A compiler for a custom language with Python and JVM bytecode output.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">Java</span><span class="tag">ANTLR</span><span class="tag">ASM</span></div>
+              <div class="project-actions">
+                <a href="https://github.com/Matars/compiler" target="_blank" rel="noopener noreferrer" aria-label="Multi-Target OFP Compiler on GitHub">GitHub ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: Multi-Target OFP Compiler</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Translate a custom imperative language into executable target representations.</p>
+                  <h4>What I Built</h4><p>Implemented parsing, symbol tables, scope handling, semantic analysis, type checking and code generation.</p>
+                  <h4>Engineering</h4><p>ANTLR provides the grammar/parser foundation; visitor-based passes perform analysis and Python generation, while ASM emits JVM bytecode. Example programs exercise functions, recursion, arrays and control flow.</p>
+                  <h4>Technology</h4><p>Java · ANTLR · ASM</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card" id="ai-impact" aria-labelledby="ai-impact-title">
+            <div class="project-image"><img src="images/AV-dashbord.png" alt="AI Impact 2030 Dashboard interface" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Academic project · Data visualization</p>
+              <h3 id="ai-impact-title">AI Impact 2030 Dashboard</h3>
+              <p>Coordinated charts explore projected AI exposure across occupations.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">JavaScript</span><span class="tag">D3.js</span></div>
+              <div class="project-actions">
+                <a href="https://github.com/YousefMelhem/Advanced-Information-Visualization" target="_blank" rel="noopener noreferrer" aria-label="AI Impact 2030 Dashboard on GitHub">GitHub ↗</a>
+                <a href="https://ai-impact-2030.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="AI Impact 2030 Dashboard live demo">Live Demo ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: AI Impact 2030 Dashboard</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Explore a dataset of projected occupational impacts through linked visual views.</p>
+                  <h4>What I Built</h4><p>Built scatter plots, parallel coordinates, histograms and box plots with filtering and brushing.</p>
+                  <h4>Engineering</h4><p>D3 interactions coordinate selections across views to compare exposure, salary and skill attributes. The dashboard visualizes dataset projections, not measured future outcomes.</p>
+                  <h4>Technology</h4><p>JavaScript · D3.js</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card" id="demographics" aria-labelledby="demographics-title">
+            <div class="project-image"><img src="images/IV-dashbord.png" alt="Global Demographics Dashboard interface" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Academic project · Data visualization</p>
+              <h3 id="demographics-title">Global Demographics Dashboard</h3>
+              <p>Interactive charts explore world population data through linked selections.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">JavaScript</span><span class="tag">D3.js</span></div>
+              <div class="project-actions">
+                <a href="https://github.com/YousefMelhem/Information-Visualization" target="_blank" rel="noopener noreferrer" aria-label="Global Demographics Dashboard on GitHub">GitHub ↗</a>
+                <a href="https://population-2025-visualization.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Global Demographics Dashboard live demo">Live Demo ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: Global Demographics Dashboard</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Make demographic comparisons easier to investigate visually.</p>
+                  <h4>What I Built</h4><p>Built coordinated charts with filtering, brushing, lasso and marquee selection.</p>
+                  <h4>Engineering</h4><p>Shared selection state connects the charts so users can inspect countries and demographic patterns across multiple views.</p>
+                  <h4>Technology</h4><p>JavaScript · D3.js</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card" id="squat" aria-labelledby="squat-title">
+            <div class="project-image"><img src="images/squatMl.png" alt="Squat Analysis ML Platform interface" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Academic project · Full-stack &amp; ML</p>
+              <h3 id="squat-title">Squat Analysis ML Platform</h3>
+              <p>A web interface connects pose-based movement scoring to Python model-serving APIs.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">MLflow</span></div>
+              <div class="project-actions">
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: Squat Analysis ML Platform</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Explore how pose data and trained models can support movement-quality analysis.</p>
+                  <h4>What I Built</h4><p>Built a Flask/React application exposing model predictions and backend health status through a web interface.</p>
+                  <h4>Engineering</h4><p>Flask prediction routes validate input and load versioned models through MLflow aliases. The project includes a Dockerized backend, model-training notebooks and API tests.</p>
+                  <h4>Technology</h4><p>Python · Flask · React · TypeScript · MLflow</p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="project-card" id="museum" aria-labelledby="museum-title">
+            <div class="project-image"><img src="images/openGl.png" alt="3D Museum Walkthrough interface" loading="lazy" width="600" height="340"></div>
+            <div class="project-content">
+              <p class="project-kind">Academic project · Graphics</p>
+              <h3 id="museum-title">3D Museum Walkthrough</h3>
+              <p>An interactive museum scene with textured geometry and real-time camera controls.</p>
+              <div class="project-tags" aria-label="Technologies"><span class="tag">Python</span><span class="tag">OpenGL</span><span class="tag">SDL2</span><span class="tag">GLSL</span></div>
+              <div class="project-actions">
+                <a href="https://github.com/YousefMelhem/Datorgrafik" target="_blank" rel="noopener noreferrer" aria-label="3D Museum Walkthrough on GitHub, private repository">GitHub (private) ↗</a>
+              </div>
+              <details class="project-details">
+                <summary>View project details<span class="sr-only">: 3D Museum Walkthrough</span></summary>
+                <div class="project-detail-body">
+                  <h4>Problem / Purpose</h4><p>Explore real-time 3D rendering through an interactive virtual environment.</p>
+                  <h4>What I Built</h4><p>Built a textured museum scene with keyboard/mouse camera navigation and custom shaders.</p>
+                  <h4>Engineering</h4><p>Scene setup, matrix transformations, vertex/fragment shaders and camera controls demonstrate graphics programming fundamentals.</p>
+                  <h4>Technology</h4><p>Python · OpenGL · SDL2 · GLSL</p>
+                  <p class="project-note">Source repository is private; GitHub access is required.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+        <p class="all-projects"><a href="https://github.com/YousefMelhem" target="_blank" rel="noopener noreferrer">Explore my GitHub profile ↗</a></p>
+      </div>
+    </section>
+
     <!-- About section -->
     <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>I'm a Software Engineering Master's student at Linnaeus University, passionate about creating innovative solutions using cutting-edge technologies. For the past two years, I have been working as a Research Assistant at Linnaeus University, where I have been involved in developing and researching multiple full-stack projects focused on AI integration and educational technology.</p>
-            <p>During my research work, I have contributed to several impactful projects including <strong>Awaits</strong> (an AI-powered writing feedback platform), <strong>Inkuis</strong> (an intelligent event discovery platform), and the <strong>Misty</strong> project. My expertise lies in Machine Learning, Data-Intensive Systems, and Full-Stack Development. I enjoy tackling complex problems and transforming ideas into reality through code, with a strong focus on practical AI applications and user-centered design.</p>
+            <p>I'm a Software Engineer and M.Sc. Software Engineering student at Linnaeus University. As a Research Engineer / Full-Stack Developer, I contribute to AWAITS and InKuiS across backend APIs, database models, authentication, user interfaces, applied AI and deployment.</p>
+            <p>My personal C#/.NET projects, <a href="#timeready">TimeReady</a> and <a href="#faktura-generator">Faktura Generator</a>, extend that work into desktop software with SQLite persistence, business rules and release automation. My research and academic work includes medical visual analytics, RAG-based writing support and RiskRank, a master's thesis prototype for vulnerability prioritization.</p>
+            <p>I bring a broad software foundation to backend and full-stack development: modelling data, separating application responsibilities, validating inputs and connecting useful interfaces to reliable workflows.</p>
           </div>
-          
+
           <div class="skills-section">
             <h3>Technical Skills</h3>
             <div class="skills-grid">
               <div class="skill-category">
                 <h4>Languages</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">Java</span>
-                  <span class="skill-tag">JavaScript</span>
-                  <span class="skill-tag">TypeScript</span>
-                  <span class="skill-tag">Dart</span>
-                  <span class="skill-tag">C++</span>
-                  <span class="skill-tag">GLSL</span>
-                  <span class="skill-tag">SQL</span>
-                </div>
+                <div class="skill-tags"><span class="skill-tag">C#</span><span class="skill-tag">Python</span><span class="skill-tag">TypeScript</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span></div>
+              </div>
+              <div class="skill-category">
+                <h4>Backend &amp; Desktop</h4>
+                <div class="skill-tags"><span class="skill-tag">.NET 10</span><span class="skill-tag">Avalonia UI</span><span class="skill-tag">Node.js / Nitro</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Flask</span><span class="skill-tag">REST APIs</span></div>
               </div>
               <div class="skill-category">
                 <h4>Frontend</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Vue 3</span>
-                  <span class="skill-tag">Nuxt 3</span>
-                  <span class="skill-tag">React</span>
-                  <span class="skill-tag">Flutter</span>
-                  <span class="skill-tag">Vuetify</span>
-                  <span class="skill-tag">Tailwind CSS</span>
-                  <span class="skill-tag">D3.js</span>
-                </div>
+                <div class="skill-tags"><span class="skill-tag">Vue</span><span class="skill-tag">Nuxt</span><span class="skill-tag">React</span><span class="skill-tag">HTML / CSS</span><span class="skill-tag">D3.js</span></div>
               </div>
               <div class="skill-category">
-                <h4>Backend & Databases</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Node.js</span>
-                  <span class="skill-tag">Flask</span>
-                  <span class="skill-tag">FastAPI</span>
-                  <span class="skill-tag">MongoDB</span>
-                  <span class="skill-tag">RESTful APIs</span>
-                </div>
+                <h4>AI &amp; Data</h4>
+                <div class="skill-tags"><span class="skill-tag">OpenAI API</span><span class="skill-tag">RAG</span><span class="skill-tag">Semantic search</span><span class="skill-tag">PyTorch</span><span class="skill-tag">MLflow</span><span class="skill-tag">Data visualization</span></div>
               </div>
               <div class="skill-category">
-                <h4>AI & Machine Learning</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">PyTorch</span>
-                  <span class="skill-tag">TensorFlow</span>
-                  <span class="skill-tag">OpenAI API</span>
-                  <span class="skill-tag">BioBERT</span>
-                  <span class="skill-tag">MLflow</span>
-                  <span class="skill-tag">GPT-4</span>
-                </div>
+                <h4>Databases</h4>
+                <div class="skill-tags"><span class="skill-tag">SQLite</span><span class="skill-tag">Microsoft.Data.Sqlite</span><span class="skill-tag">MongoDB</span><span class="skill-tag">Mongoose</span><span class="skill-tag">SQL migrations</span></div>
               </div>
               <div class="skill-category">
-                <h4>DevOps & Cloud</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Docker</span>
-                  <span class="skill-tag">CI/CD</span>
-                  <span class="skill-tag">AWS S3</span>
-                  <span class="skill-tag">Nginx</span>
-                  <span class="skill-tag">Git</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4>AI Development Tools</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">GitHub Copilot</span>
-                  <span class="skill-tag">Cursor</span>
-                  <span class="skill-tag">OpenCode</span>
-                  <span class="skill-tag">Codex</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4>Specializations</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Machine Learning</span>
-                  <span class="skill-tag">Deep Learning</span>
-                  <span class="skill-tag">Data Visualization</span>
-                  <span class="skill-tag">Computer Graphics</span>
-                  <span class="skill-tag">Shader Programming</span>
-                  <span class="skill-tag">Compiler Design</span>
-                  <span class="skill-tag">Full-Stack Development</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h4>Graphics & Rendering</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">OpenGL</span>
-                  <span class="skill-tag">SDL2</span>
-                  <span class="skill-tag">Vertex Shaders</span>
-                  <span class="skill-tag">Fragment Shaders</span>
-                  <span class="skill-tag">3D Transformations</span>
-                  <span class="skill-tag">Real-Time Camera Systems</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects section -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        
-        <div class="projects-grid">
-          <!-- Multi-Target Compiler -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/compiler.webp" alt="Multi-Target Compiler for OFP Language" loading="lazy" />
-              <div class="project-overlay">
-                <a href="https://github.com/Matars/compiler" target="_blank" class="project-link">View Code</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Multi-Target Compiler for Custom Programming Language (OFP)</h3>
-              <p>Developed a complete compiler toolchain for a custom imperative programming language using Java and ANTLR. Implemented lexical analysis, parsing, symbol table construction, semantic analysis with type checking, and dual-target code generation (Python transpilation and JVM bytecode via ASM). Supports functions, recursion, arrays, control flow, and multiple data types (int, float, bool, char, string).</p>
-              <div class="project-tags">
-                <span class="tag">Java</span>
-                <span class="tag">ANTLR</span>
-                <span class="tag">Compiler</span>
-                <span class="tag">ASM</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Inkuis Event Platform -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/Inkuis.png" alt="Inkuis Event Discovery Platform" loading="lazy" />
-              <div class="project-overlay">
-                <a href="https://inkuis.lnu.se/" target="_blank" class="project-link">View Platform</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Inkuis - Event Discovery Platform</h3>
-              <p>A full-stack event management and discovery platform that helps users find local events through intelligent location-based filtering. Built with Nuxt 3 and MongoDB, Inkuis features bilingual support (English/Swedish) and uses AI to enhance the user experience. Smart location search with radius-based filtering (1-100km), AI-powered chatbot with OpenAI integration, automated categorization with Prefect workflows, and interactive analytics dashboard.</p>
-              <div class="project-tags">
-                <span class="tag">Nuxt 3</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">OpenAI</span>
-                <span class="tag">Vue 3</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Awaits Writing Feedback -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/awaits.png" alt="Awaits AI Writing Feedback Platform" loading="lazy" />
-              <div class="project-overlay">
-                <a href="https://awaits.lnu.se/" target="_blank" class="project-link">View Platform</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Awaits - AI-Powered Writing Feedback Platform</h3>
-              <p>A full-stack educational technology platform that delivers real-time, intelligent writing feedback to students using OpenAI's GPT-4. Teachers create customized AI teaching assistants with topic-specific instructions and resource libraries, while students receive instant, contextual feedback directly within a rich text editor. Features Server-Sent Events streaming, custom TipTap editor with AI-powered inline suggestions, role-based access control, and comprehensive teacher analytics dashboard.</p>
-              <div class="project-tags">
-                <span class="tag">TypeScript</span>
-                <span class="tag">Nuxt 3</span>
-                <span class="tag">OpenAI API</span>
-                <span class="tag">MongoDB</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- AI Impact 2030 Dashboard -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/AV-dashbord.png" alt="AI Impact 2030 Dashboard" loading="lazy" />
-              <div class="project-overlay">
-                <a href="https://ai-impact-2030.onrender.com/" target="_blank" class="project-link">View Dashboard</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>AI Impact on Occupations - 2030 Dashboard</h3>
-              <p>Interactive data visualization dashboard exploring AI's projected impact on 400+ occupations by 2030. Built with D3.js, featuring linked views (scatter plots, parallel coordinates, histograms, box plots) with interactive filtering and brushing to analyze AI exposure, automation probability, salary trends, and required skills across different job sectors.</p>
-              <div class="project-tags">
-                <span class="tag">D3.js</span>
-                <span class="tag">Data Visualization</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Global Demographics Dashboard -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/IV-dashbord.png" alt="Global Demographics Dashboard" loading="lazy" />
-              <div class="project-overlay">
-                <a href="https://population-2025-visualization.onrender.com/" target="_blank" class="project-link">View Dashboard</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Global Demographics Dashboard</h3>
-              <p>An interactive D3.js visualization system exploring 2025 world population data across 233 countries. Features multiple coordinated views with advanced interaction techniques (marquee, lasso, brushing) and dynamic filtering, demonstrating data-driven storytelling with real-time visual feedback across nine synchronized charts.</p>
-              <div class="project-tags">
-                <span class="tag">D3.js</span>
-                <span class="tag">Data Visualization</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Medical Case Exploration Platform -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/medPix.png" alt="Medical Case Visual Analytics Platform" loading="lazy" />
-              <div class="project-overlay">
-                <a href="#projects" class="project-link">View Project</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Medical Case Visual Analytics Platform</h3>
-              <p>Built a full-stack visual analytics platform for medical case exploration, combining Nuxt/Vue + D3 dashboards with a FastAPI backend and multimodal AI similarity search (BioBERT text + PubMedCLIP image embeddings) across 7,400+ cases and 40,900+ images.</p>
-              <div class="project-tags">
-                <span class="tag">Nuxt</span>
-                <span class="tag">Vue</span>
-                <span class="tag">D3.js</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">BioBERT</span>
-                <span class="tag">AI</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Squat Analysis ML Platform -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/squatMl.png" alt="Squat Analysis ML Platform" loading="lazy" />
-              <div class="project-overlay">
-                <a href="#projects" class="project-link">View Project</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Squat Analysis ML Platform</h3>
-              <p>Built a full-stack, data-intensive web application for squat analysis and movement quality scoring. The system uses a Flask backend to process pose/keypoint data and run machine-learning inference (PyTorch/TensorFlow/MLflow), and a React + TypeScript frontend to present predictions and health status in a simple UI. It combines model serving, API design, and practical ML integration to deliver real-time feedback for exercise form assessment.</p>
-              <div class="project-tags">
-                <span class="tag">React</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Flask</span>
-                <span class="tag">PyTorch</span>
-                <span class="tag">MLflow</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3D Museum Walkthrough -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="images/openGl.png" alt="3D Museum Walkthrough with OpenGL and SDL2" loading="lazy" />
-              <div class="project-overlay">
-                <a href="https://github.com/YousefMelhem/Datorgrafik" target="_blank" class="project-link">View Code</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>3D Museum Walkthrough</h3>
-              <p>Built a 3D museum walkthrough in Python using OpenGL and SDL2, featuring textured geometry, custom vertex/fragment shaders, and a real-time camera system with keyboard/mouse controls. The project demonstrates core graphics programming skills including scene setup, matrix transformations, shader-based rendering, and interactive navigation.</p>
-              <div class="project-tags">
-                <span class="tag">Python</span>
-                <span class="tag">OpenGL</span>
-                <span class="tag">SDL2</span>
-                <span class="tag">GLSL</span>
-                <span class="tag">Computer Graphics</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- GitHub Profile Card -->
-          <div class="project-card featured">
-            <div class="project-image">
-              <img src="images/gitHub.png" alt="GitHub Profile" loading="lazy" />
-              <div class="project-overlay">
-                <a href="https://github.com/YousefMelhem" target="_blank" class="project-link">View GitHub</a>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>All GitHub Projects</h3>
-              <p>Explore my complete collection of open-source projects, contributions, and code repositories.</p>
-              <div class="project-tags">
-                <span class="tag">Open Source</span>
-                <span class="tag">Various Tech</span>
+                <h4>DevOps / Platform</h4>
+                <div class="skill-tags"><span class="skill-tag">Docker</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">GitLab CI/CD</span><span class="skill-tag">AWS S3</span><span class="skill-tag">Git</span><span class="skill-tag">xUnit</span></div>
               </div>
             </div>
           </div>
@@ -483,7 +504,7 @@
     <section id="contact" class="section">
       <div class="container">
         <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-intro">Feel free to reach out for collaborations, opportunities, or just a friendly chat!</p>
+        <p class="contact-intro">Open to Software Engineer, Backend Developer and Full-Stack Developer opportunities, including applied AI and data-intensive applications.</p>
         
         <div class="contact-container">
           <div class="contact-info">
@@ -499,13 +520,13 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
-              <a href="https://www.linkedin.com/in/yousef-thamer-mohammad-540693290" target="_blank">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/yousef-thamer-mohammad-540693290" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
             </div>
             <div class="contact-item">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
               </svg>
-              <a href="https://github.com/YousefMelhem" target="_blank">GitHub Profile</a>
+              <a href="https://github.com/YousefMelhem" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
             </div>
           </div>
 
@@ -526,12 +547,14 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary">Open Email Draft</button>
+            <p class="form-note">Opens your email app with these details. Send the message from there.</p>
           </form>
         </div>
       </div>
     </section>
 
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="js/scripte.js"></script>
   </body>

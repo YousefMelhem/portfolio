@@ -1,0 +1,8 @@
+{
+  "name": "yousef-portfolio",
+  "private": true,
+  "scripts": {
+    "check": "node --check js/scripte.js && node scripts/build.mjs --check",
+    "build": "node --check js/scripte.js && node scripts/build.mjs"
+  }
+}

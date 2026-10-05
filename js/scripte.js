@@ -28,6 +28,7 @@ const CONFIG = {
 
 // Scale down for mobile
 const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent) || window.innerWidth < 768;
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if (isMobile) {
   CONFIG.particles.count = 50;
   CONFIG.ambient.count = 20;
@@ -74,7 +75,7 @@ function createGlowTexture() {
 
 function initScene() {
   const canvas = document.getElementById('neural-bg');
-  if (!canvas) return;
+  if (!canvas || reducedMotion.matches || isMobile || typeof THREE === 'undefined') return;
 
   scene = new THREE.Scene();
   camera = new THREE.PerspectiveCamera(
@@ -270,6 +271,7 @@ function onResize() {
 
 function animate() {
   requestAnimationFrame(animate);
+  if (document.hidden || reducedMotion.matches || window.scrollY > window.innerHeight) return;
   clock += 0.008;
   frameCount++;
 
@@ -302,7 +304,7 @@ function animate() {
 // ============================================================
 // Dot Navigation - Scroll Tracking
 // ============================================================
-const sections = ['home', 'about', 'projects', 'courses', 'contact'];
+const sections = ['home', 'projects', 'about', 'courses', 'contact'];
 const dotLinks = document.querySelectorAll('.dot-link');
 
 function updateActiveDot() {
@@ -322,82 +324,14 @@ function updateActiveDot() {
 
   dotLinks.forEach(dot => {
     dot.classList.toggle('active', dot.dataset.section === current);
+    if (dot.dataset.section === current) dot.setAttribute('aria-current', 'location');
+    else dot.removeAttribute('aria-current');
   });
 }
 
-// Smooth scroll for dot clicks
-dotLinks.forEach(dot => {
-  dot.addEventListener('click', (e) => {
-    e.preventDefault();
-    const target = document.getElementById(dot.dataset.section);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
+// Native anchors preserve URL history, keyboard navigation and no-JS behavior.
 
 window.addEventListener('scroll', updateActiveDot, { passive: true });
-
-// ============================================================
-// Scroll Reveal Animations
-// ============================================================
-function initScrollReveal() {
-  const revealElements = document.querySelectorAll(
-    '.section-title, .about-text, .skills-section, .project-card, ' +
-    '.skill-category, .course-table, .contact-intro, .contact-info, ' +
-    '.contact-form, .contact-item, #courses h3'
-  );
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        // Don't unobserve - allows re-triggering if wanted
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -60px 0px',
-  });
-
-  revealElements.forEach((el, index) => {
-    el.classList.add('reveal');
-    // Small stagger based on position within its section
-    const parent = el.closest('.section');
-    if (parent) {
-      const siblings = Array.from(parent.querySelectorAll('.reveal'));
-      const i = siblings.indexOf(el);
-      el.style.transitionDelay = `${i * 0.08}s`;
-    }
-    observer.observe(el);
-  });
-}
-
-// ============================================================
-// 3D Card Tilt Effect
-// ============================================================
-function initCardTilt() {
-  if (isMobile) return;
-
-  const cards = document.querySelectorAll('.project-card, .skill-category, .contact-item');
-
-  cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const cx = rect.width / 2;
-      const cy = rect.height / 2;
-      const rotateX = ((y - cy) / cy) * -6;
-      const rotateY = ((x - cx) / cx) * 6;
-      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(8px)`;
-    });
-
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
-}
 
 // ============================================================
 // Contact Form
@@ -416,33 +350,20 @@ function initContactForm() {
 
     const mailto = `mailto:youmoh0517@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
     window.location.href = mailto;
-    alert('Opening your email client...');
-    form.reset();
+    // Keep entered text available if no mail client is configured.
   });
-}
-
-// ============================================================
-// Lazy Loading
-// ============================================================
-function initLazyLoading() {
-  if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => { img.src = img.src; });
-  } else {
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
-    document.body.appendChild(script);
-  }
 }
 
 // ============================================================
 // Initialize
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
-  initScene();
-  initScrollReveal();
-  initCardTilt();
   initContactForm();
-  initLazyLoading();
   updateActiveDot();
+  // Decoration must never prevent navigation or contact behavior.
+  try {
+    initScene();
+  } catch (error) {
+    document.getElementById('neural-bg')?.remove();
+  }
 });
